@@ -36,27 +36,37 @@ const object3 = { ...object1, ...object2 };
 // console.log(object3);
 
 const users = [
-    {
-        id:1,
-        email:"shahzaib@gmail.com"
-    },
-    {
-        id:2,
-        email:"shahzaib@yahoo.com"
-    },
-    {
-        id:3,
-        email:"shahzaib@outlook.com"
-    },
-]
+  {
+    id: 1,
+    email: "shahzaib@gmail.com",
+  },
+  {
+    id: 2,
+    email: "shahzaib@yahoo.com",
+  },
+  {
+    id: 3,
+    email: "shahzaib@outlook.com",
+  },
+];
 
 // console.log(users[0].id);
 // console.log(users[0].email);
-
 
 // console.log(tinderUser)
 
 // console.log(Object.keys(tinderUser))
 // console.log(Object.values(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('id'))
+// console.log(tinderUser.hasOwnProperty("id"));
+
+const cousrse = {
+  coursename: "Javascript Mastery",
+  price: 999,
+  courseInstructor: 'Hitesh Choudhary'
+};
+
+const {coursename, courseInstructor, price} = cousrse
+
+console.log(coursename)
+
